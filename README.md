@@ -6,7 +6,7 @@ Server : https://todoserver-hackerearth.herokuapp.com/
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://todo-hackerearth.web.app/)
 
-Task mangement todo is a full-stack web application built with MEVN Stack(MongoDB, Express, VueJS, Node). It is built for satisfying the criteria of the a hackathon conducted by https://www.hackerearth.com/. The original hackathon at https://www.hackerearth.com/challenges/hackathon/stackhack-v1/
+Task mangement todo is a full-stack web application built with MEVN Stack(MongoDB, Express, VueJS, Node). It is built for satisfying the criteria of a hackathon conducted by https://www.hackerearth.com/. The original hackathon at https://www.hackerearth.com/challenges/hackathon/stackhack-v1/
 
 # Feature
 
