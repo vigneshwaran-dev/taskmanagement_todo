@@ -1,0 +1,360 @@
+/*@media only screen (max-device-width : 768px) {
+  html,body { display: none; } 
+}*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #feb800;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #357d72;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #feb800;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #357d72;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background: #357d72;
+}
+
+/*Login :start*/
+
+/*Login :end*/
+
+.parent-wrapper {
+  display: inline-block;
+  margin: 2em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 15% 85%;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 2em;
+  text-align: unset;
+}
+
+.top-bar {
+  display: flex;
+  justify-self: flex-end;
+  padding: 1em;
+}
+
+.top-bar > div {
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.logout-container {
+  position: absolute;
+  left : 0;
+  font-size: 20px;
+  padding-left: 8.5em;
+  padding-top: 1em;
+}
+
+.logout {
+  color: rgba(221, 17, 17, 0.74);
+  cursor: pointer;
+}
+
+.todo-search-container {
+  position: relative;
+}
+
+.todo-search-container input[type="text"] {
+  padding-left: 40px;
+}
+
+.todo-search-container i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #feb800;
+}
+
+.todo-search {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.todo-search:focus {
+  border-color: #feb800;
+  box-shadow: 0 0 8px 0 #feb800;
+}
+
+.add-todo-btn {
+  color: white;
+  background: #feb800;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 1em;
+  outline: none;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100%;
+}
+
+.side-bar {
+  display: grid;
+  grid-template-rows: 40% 60%;
+  grid-gap: 1em;
+}
+
+.avatar-details {
+  text-align: center;
+}
+
+.img-border {
+  display: inline-block;
+  border-radius: 50%;
+  border: solid #357d72 3px;
+  height: 130px;
+  width: 130px;
+  padding: 5px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  cursor: pointer;
+}
+
+.calendar {
+  text-align: center;
+  padding: 5px;
+  margin-left: 2em;
+  flex-direction: column;
+}
+
+.content-holder {
+  display: grid;
+  grid-template-rows: 15% 10% 70% 5%;
+  grid-gap: 1em;
+  padding: 1em;
+  background: #f9f9fb;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.todo-title-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.label-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.label-filter {
+  background: white;
+  font-size: 16px;
+  padding: 10px;
+  max-width: 20px;
+  cursor: pointer;
+  border-radius: 1em;
+  color: #615d5d;
+  position: relative;
+}
+
+.label-filter .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background: darkgray;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.label-filter:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.filter-selected {
+  background: #615d5d;
+  color: white;
+}
+
+.pagination {
+  display: inline-flex;
+  justify-self: flex-end;
+  padding: 1em;
+  background: white;
+  border-radius: 0.5em;
+}
+
+.pagination-item {
+  font-size: 16px;
+  padding: 10px;
+  max-width: 20px;
+}
+
+.pagination-item i {
+  cursor: pointer;
+}
+
+.todo-legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding-left: 1em;
+}
+
+.legend {
+  background: white;
+  padding: 1em;
+  color: #615d5d;
+  border-radius: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  border-left: solid white 0.3em;
+}
+
+.new {
+  border-left: solid #357d72 0.3em;
+}
+
+.progress {
+  border-left: solid #feb800 0.3em;
+}
+
+.completed {
+  border-left: solid #fc9e60 0.3em;
+}
+
+.todo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding-left: 1em;
+  height: 357.61px;
+  width: 930.5px;
+}
+
+.todo {
+  position: relative;
+  padding: 1em;
+  height: 135px;
+  background: white;
+  border-radius: 0.5em;
+}
+
+.todo-footer {
+  position: absolute;
+  bottom: 0;
+  color: #bcbcbc;
+  width: 93%;
+  bottom: 0;
+}
+
+.todo-setting {
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.todo-setting .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background: rgb(83, 80, 80);
+  color: white;
+  border-radius: 8px;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.todo-setting:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.todo-setting ul {
+  margin-top: unset;
+  margin-bottom: unset;
+  list-style: none;
+  list-style-type: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.tooltip-list li {
+  height: 20px;
+  border-left: solid rgb(83, 80, 80) 5px;
+  border-radius: .25em;
+}
+
+.tooltip-list li:nth-child(1):hover{
+  border-left: solid #357d72 5px;
+}
+
+.tooltip-list li:nth-child(2):hover{
+  border-left: solid #feb800 5px;
+}
+
+.tooltip-list li:nth-child(3):hover{
+  border-left: solid #fc9e60 5px;
+}
+
+.tooltip-list li:nth-child(4):hover{
+  border-left: solid red 5px;
+}
+
+.todo-pagination {
+  background: white;
+}
+
+.hide { 
+  display: none;
+}
