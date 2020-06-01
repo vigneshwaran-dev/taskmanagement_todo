@@ -115,6 +115,8 @@ export default {
       if(this.loginError.email || this.loginError.password)
         return;
 
+      this.login.email = this.login.email.trim();
+
       axios.post(this.$API+'/login', this.login).then(
         (res) => {
           if (res.status === 200) {
@@ -150,6 +152,8 @@ export default {
 
       if(this.signupError.name || this.signupError.email || this.signupError.password || this.signupError.confirmPassword)
         return;
+
+      this.signup.email = this.signup.email.trim(); 
 
       axios.post(this.$API+'/register', this.signup).then(
         (res) => {
