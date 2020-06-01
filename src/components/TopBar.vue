@@ -17,7 +17,7 @@
     </div>
 
     <div>
-      <button class="add-todo-btn" @click="addTodo = true">Add Todo</button>
+      <button class="add-todo-btn" @click="addTodo = true">Add To-do</button>
       <AddTodo v-show="addTodo" @close="addTodo = false" />
     </div>
   </div>

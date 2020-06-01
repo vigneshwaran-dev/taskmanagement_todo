@@ -1,7 +1,7 @@
 <template>
   <div class="todo-title-bar">
     <div class="welcome-user">
-      <h2><font color="#357d72">{{$store.state.user.name}}</font>'s Todo List</h2>
+      <h2><font color="#357d72">{{$store.state.user.name}}</font>'s To-do List</h2>
     </div>
 
     <div class="label-filters">
