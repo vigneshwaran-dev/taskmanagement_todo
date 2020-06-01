@@ -8,7 +8,7 @@ Vue.config.productionTip = false;
 Vue.use(VCalendar);
 
 //Set the server API address here
-Vue.prototype.$API = '';
+Vue.prototype.$API = 'https://todoserver-hackerearth.herokuapp.com';
 
 new Vue({
   store,

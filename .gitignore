@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 server/node_modules
+Todo – Hackerearth Stackhack v-1.pptx
 
 # local env files
 .env.local

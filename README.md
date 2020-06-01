@@ -39,9 +39,22 @@ https://github.com/vigneshwaran-dev/taskmanagement_todo
 Install the dependencies and devDependencies and start the developmental server.
 
 ```sh
-$ npm i -g @vue/cli
 $ npm i
+```
+
+You can run this if you have installed Vue JS globally [$ npm i -g @vue/cli]
+```sh
 $ npm run serve
+```
+or run npx command
+
+```sh
+$ npx vue-cli-service serve
+```
+
+For the server side run these commands
+
+```sh
 $ cd server
 $ npm i
 $ npm run dev

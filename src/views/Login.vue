@@ -106,6 +106,7 @@ export default {
     doLogin() {
       this.loginError.email = this.loginError.password = false;
 
+      this.login.email = this.login.email.trim();
       if(this.login.email === '' || !this.checkEmail(this.login.email))
         this.loginError.email = true;
 
@@ -115,7 +116,6 @@ export default {
       if(this.loginError.email || this.loginError.password)
         return;
 
-      this.login.email = this.login.email.trim();
 
       axios.post(this.$API+'/login', this.login).then(
         (res) => {
@@ -137,6 +137,7 @@ export default {
       if(this.signup.name.length < 4)
         this.signupError.name = true;
 
+      this.signup.email = this.signup.email.trim();
       if(this.signup.email === '' || !this.checkEmail(this.signup.email))
         this.signupError.email = true;
 
@@ -151,9 +152,7 @@ export default {
       } 
 
       if(this.signupError.name || this.signupError.email || this.signupError.password || this.signupError.confirmPassword)
-        return;
-
-      this.signup.email = this.signup.email.trim(); 
+        return; 
 
       axios.post(this.$API+'/register', this.signup).then(
         (res) => {
