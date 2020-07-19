@@ -1,6 +1,6 @@
 # Task management Todo
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
 Task mangement todo is a full-stack web application built with MEVN Stack(MongoDB, Express, VueJS, Node).
 
