@@ -1,12 +1,8 @@
 # Task management Todo
 
-Deployed : 
-Web : https://todo-hackerearth.web.app/
-Server : https://todoserver-hackerearth.herokuapp.com/
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://todo-hackerearth.web.app/)
-
-Task mangement todo is a full-stack web application built with MEVN Stack(MongoDB, Express, VueJS, Node). It is built for satisfying the criteria of a hackathon conducted by https://www.hackerearth.com/. The original hackathon at https://www.hackerearth.com/challenges/hackathon/stackhack-v1/
+Task mangement todo is a full-stack web application built with MEVN Stack(MongoDB, Express, VueJS, Node).
 
 # Feature
 
@@ -31,8 +27,6 @@ Task Management Todo uses a number of open source projects to work properly:
 * Multer - a node.js middleware for handling multipart/form-data
 * bcryptjs - A library to help you hash passwords.
 
-And of course Task Management Todo itself is open source with a publiu repository
-https://github.com/vigneshwaran-dev/taskmanagement_todo
 
 ### Installation
 
